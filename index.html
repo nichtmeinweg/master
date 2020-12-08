@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#NichtMeinWeg</title>
+    <meta name="description" content="Wir kritisieren die Gleichg&uuml;ltigkeit gegen&uuml;ber den an COVID-19 erkrankten und verstorben in der Schweiz. Es gibt keine G&uuml;terabw&auml;gung zwischen Gesundheit, Wirtschaft und Gesellschaft. #LongCovid #NichtMeinWeg" />
+    <meta name="robots" content="all" />
+
+<!-- 
+Timeless Template 
+http://www.templatemo.com/tm-517-timeless
+-->
+    <!-- load CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Templatemo style -->
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--JQUERY-->
+    <script src="js/jquery.min.js"></script>
+
+    <!--JSON DATA -->
+    <script type="text/javascript" src="data/data.js"></script>
+
+</head>
+
+<body >
+
+
+
+    <!-- .container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <header class="text-center tm-site-header">
+                    <h1 class="pl-4 tm-site-title">
+                        #NichtMeinWeg</h1>
+                </header>
+            </div>
+        </div>
+        <!--div class="row">
+            <div class="col-lg-12">
+                <div class="tm-video-container">
+                    <video id="tm-welcome-video" class="tm-welcome-video" autoplay="" loop="" muted="">
+                        <source src="videos/video.mp4" type="video/mp4"> Your browser does not support the video tag.
+                        </video>
+                        <div id="tm-video-loader"></div>
+                        <div id="tm-video-text-overlay" class="tm-video-text-overlay d-none">
+                            <h1>
+                                <div id="rotate" class="tm-video-text">
+                                    <div>This is timeless</div>
+                                    <div>We are invincible</div>
+                                    <div>Quite unbeatable</div>
+                                    <div>and indestructible</div>
+                                </div>
+                            </h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div-->
+        <div class="container tm-container-2">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p> Es gibt keine G&uuml;terabw&auml;gung zwischen Gesundheit, Wirtschaft und Gesellschaft.  
+                        Diese Seite visualisiert die Chronologie das Versagen des Schweizer Wegs zur Bekämpfung der gr&ouml;sten 
+                        Katastrophe im Gesundheitswesen seit &uuml;ber 100 Jahren auf. 
+                        Die Gleichg&uuml;ltigkeit gegen&uuml;ber den an COVID-19 erkrankten und verstorben, welche in dieser 
+                        Chronologie offensichtlich wird, muss ein Ende haben. 
+                        <br>#LongCovid #NichtMeinWeg 
+                    </p>
+                </div>
+            </div>
+            <div class="row tm-section-mb">
+                <div class="col-lg-12" id="timelineposts">
+                    <script>
+                        for(var i = 0; i < EVENTS.length; i++) {
+                            var event = EVENTS[i];
+                            var html = new Array;
+                                html.push('<div class=" tm-timeline-item">');
+                                html.push('<div class="tm-timeline-item-inner">');
+                                html.push('<img src="'+ event.image +'" alt="Image" class="rounded-circle tm-img-timeline">');
+                                html.push('<div class="tm-timeline-connector">');
+                                html.push('<p class="mb-0">&nbsp;</p>');
+                                html.push('</div>');
+                                html.push('<div class="tm-timeline-description-wrap">');
+                                html.push('<div class="tm-bg-dark tm-timeline-description">');
+                                html.push('<h3 class="tm-text-green tm-font-400">'+ event.description +'</h3>');
+                                html.push('<p>'+ event.text +'');
+                                html.push('<p class="tm-text-green float-right mb-0">'+ event.date +'</p>');
+                                html.push('</div>');
+                                html.push('</div>');
+                                html.push('</div>');
+                                html.push('<div class="tm-timeline-connector-vertical"></div>');
+                                html.push('</div>');
+                            $('#timelineposts').append( html.join('') );
+                            console.log(event.description);
+                        }
+                    </script>
+                </div>
+            </div>
+            <!--  row -->
+            <hr>
+            <div class="row tm-section-mb tm-section-mt">
+                <div class="col-lg-4 col-md-4 col-sm-12 pr-lg-5 mb-md-0 mb-4">
+                    <h3 class="mt-2 mb-3 tm-text-gray">Allgemeine Erklärung der Menschenrechte</h3>
+                    <p>«Jeder Mensch hat das Recht auf Leben, Freiheit und Sicherheit der Person.»</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 pr-lg-5 mb-md-0 mb-4">
+                    <h3 class="mt-2 mb-3 tm-text-gray">Bundesverfassung der Schweizerischen Eidgenossenschaft Art. 118 Schutz der Gesundheit</h3>
+                    <p>Der Bund trifft im Rahmen seiner Zuständigkeiten Massnahmen zum Schutz der Gesundheit.Er erlässt Vorschriften über: (b) die Bekämpfung übertragbarer, stark verbreiteter oder bösartiger Krankheiten von Menschen und Tieren;</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="mt-2 mb-3 tm-text-gray">Gesetzgebung Übertragbare Krankheiten – Epidemiengesetz</h3>
+                    <p>Art. 4 Ziele und Strategien: Der Bundesrat legt unter Einbezug der Kantone die Ziele und Strategien der Erkennung, Überwachung, Verhütung und Bekämpfung übertragbarer Krankheiten fest. </p>
+                </div>
+            </div>
+            <hr>
+        <!-- Footer -->
+        <footer class="row mt-5 mb-5">
+            <div class="col-lg-12">
+                <p class="text-center tm-text-gray tm-copyright-text mb-0">Impressum:&nbsp; 
+                    <a class="links card-link text" href="mailto:info@nichtmeinweg.ch">info@nichtmeinweg.ch</a>&nbsp;Social Media:<a href="https://twitter.com/intent/tweet?button_hashtag=NichtMeinWeg" class="fa fa-twitter">&nbsp;</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+
+</body>
+</html>
