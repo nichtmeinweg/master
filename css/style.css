@@ -65,7 +65,12 @@ h3 {
     max-height: 640px;
     overflow-y: hidden;
 }
-
+.tm-flag-container {
+    position: relative;
+    max-width: 1512px;
+    max-height: 800px;
+    overflow-y: hidden;
+}
 .tm-video-text {
     display: inline-block;
 }
@@ -117,8 +122,8 @@ a.tm-text-white:focus {
     color: #FFFFFF;
 }
 
-.tm-text-green {
-    color: #99CC66;
+.tm-text-orange {
+    color: #FDCC6D;
 }
 
 .tm-text-cyan {
@@ -129,9 +134,7 @@ a.tm-text-white:focus {
     color: #FFFF66;
 }
 
-.tm-text-orange {
-    color: #CC9966;
-}
+
 
 .tm-bg-dark {
     background-color: #262626;
@@ -379,4 +382,18 @@ p {
 .fa-twitter {
     color: white;
     
+}
+a:hover { color: #FDCC6D; font-weight: bold;}
+a {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+.hyphenate {
+    
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
 }
