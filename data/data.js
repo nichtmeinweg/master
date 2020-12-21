@@ -1,4 +1,5 @@
-const EVENTS = [
+
+var EVENTS = [
     {
         "description": "SARS Pandemie 2002 #LongCovid",
         "text": "Die SARS Pandemie 2002 ist das erste &ndash; gleich weltweite &ndash; Auftreten des durch SARS-CoV hervorgerufenen Schweren Akuten Atemwegssyndroms (SARS). Die Krankheit und auch deren chronische Folgen konnten das erste Mal beobachtet werden, und sind in Studien belegt. #LongCovid. Es kann daher nicht behauptet werden, die Folgen der Epidemie w&auml;ren nicht absch&auml;tzbar gewesen. Informationen und wissenschaftliche Studien waren &ouml;ffentlich zug&auml;nglich und verf&uuml;gbar. Das Leid h&auml;tte verhindert werden k&ouml;nnen, wenn ein politischer Wille dazu dagewesen w&auml;re.",
@@ -80,7 +81,7 @@ const EVENTS = [
     {
         "description": "Wenn unter 12 j&auml;hrige Kinder Krankheitssymptome haben",
         "text": "Das BAG empfiehlt das Kinder, auch mit Krankheitssymptomen weiterhin zur Schule oder Kindergarten gehen sollen. Das Kinder aufgrund von COVID-19 an MIS-C erkranken ist bereits seit dem Fr&uuml;hjahr in Italien sowie den USA wissenschaftlich belegt.",
-        "date": "25.9.2020",
+        "date": "25.09.2020",
         "image": "img/children.jpg",
 		"link": "https://www.bag.admin.ch/bag/de/home/das-bag/aktuell/news/news-25-09-2020.html"
     },
@@ -100,12 +101,28 @@ const EVENTS = [
     },
 
     {
+        "description": "Notfallmedizin fordert unverz&#252;gliche Massnahmen",
+        "text": "Die Schweizerische Gesellschaft f&#252;r Notfall- und Rettungsmedizin (SGNOR), die Notfallpflege Schweiz und die Vereinigung Rettungssanit&#228;ter Schweiz (VRS) warnen Bund und Kantone vor einer &#220;berlastung des Personals und fordern Massnahmen gegen die Ausbreitung der Pandemie. Unterdessen warnt Bundesrat Ueli Maurer vor einer Hysterie.",
+        "date": "17.10.2020",
+        "image": "img/rega.jpg",
+		"link": "https://www.bluewin.ch/de/news/schweiz/notfallmedizin-fordert-sofortige-massnahmen-gegen-zweite-welle-450604.html"
+    },    
+
+    {
         "description": "Strategische Grundlagen zur COVID-19-Bew&auml;ltigung",
         "text": "Das BAG ver&ouml;ffentlicht Strategische Grundlagen zur COVID-19-Bew&auml;ltigung. Es wird von Mitigationsmassnahmen geschrieben. Es soll also nicht verhindert werden das das Virus in der Bev&ouml;lkerung zirkuliert, es soll lediglich eine &Uuml;berlastung der Spit&auml;ler verhindert werden. Zu diesem Zeitpunkt sind sowohl die Langzeitfolgen (ca.: 10%-20% der Infizierten &ndash; nicht zwingend der schwer erkrankten &ndash; entwickeln das #LongCovid Syndrom) als auch die Todesraten &ouml;ffentlich bekannt. Es ist ebenfalls bereits bekannt, dass sich Menschen mehrfach mit dem Virus anstecken k&ouml;nnen. Eine Immunisierung der Bev&ouml;lkerung daher nicht ohne wirksamen Impfstoff m&ouml;glich ist.",
         "date": "22.10.2020",
         "image": "img/chess.jpg",
 		"link": "https://www.bag.admin.ch/dam/bag/de/dokumente/cc/kom/covid-19-strategische-grundlagen-gdk-edi-bag.pdf.download.pdf/COVID-19-Bew%C3%A4ltigung%20%E2%80%93%20Strategische%20Grundlagen%20der%20GDK%20und%20des%20EDI-BAG.pdf"
     },  
+
+    {
+        "date": "31.10.2020",
+        "description": "Bruno Damann, CVP",
+        "text": "Unsere Gesellschaft hat verlernt zu sterben",
+        "link": "https://www.tagblatt.ch/ostschweiz/damann-verharmlost-die-gefahr-durch-das-coronavirus-gruene-fordern-vom-stgaller-gesundheitschef-eine-oeffentliche-entschuldigung-ld.1274111",
+        "image": "img/nati.jpg",
+    },
 
     {
         "description": "Die Welt hofft auf einen Impfstoff",
@@ -116,7 +133,7 @@ const EVENTS = [
     },  
 
     {
-        "description": "Leben wird in wertvoll und weniger wertvoll eingeteilt",
+        "description": "Leben wird in wertvoll und weniger wertvoll eingeteilt, Ueli Maurer, SVP",
         "text": "Finanzminister Ueli Maurer steht hinter dem vergleichsweise liberalen Umgang der Schweiz mit dem Coronavirus. &laquo;Wir haben eine G&uuml;terabw&auml;gung zwischen Gesundheit, Wirtschaft und &ouml;ffentlichem Leben gemacht.&raquo; Es f&auml;llt der Satz. &laquo;Der ganz grosse Teil sind &uuml;ber 80-J&auml;hrige&raquo;, was einer Abwertung gleich kommt. Warum sollte das weniger schlimm f&uuml;r den Betroffenen und die angeh&ouml;rigen sein? Ueli Maurer pr&auml;gt an diesem Tag den Satz &laquo;F&uuml;r mich stimmt dieser Weg&raquo;. F&uuml;r viele in der Schweiz stimmt dieser Weg allerdings nicht. F&uuml;r viele kann man Leben nicht politisch entwerten. #NichtMeinWeg entsteht.",
         "date": "21.11.2020",
         "image": "img/finance.jpg",
@@ -146,7 +163,13 @@ const EVENTS = [
         "image": "img/fall.jpg",
 		"link": "https://www.healthline.com/health-news/the-post-thanksgiving-covid-19-surge-is-here-what-to-expect-now"
     },  
-
+    {
+        "date": "28.11.2020",
+        "description": "Ruth Humbel, CVP",
+        "text": "Nicht jeder Tot ist eine Katastrophe",
+        "link": "https://www.nau.ch/politik/bundeshaus/arena-aussage-von-cvp-ruth-humbel-sorgt-im-netz-fur-emporung-65827028",
+        "image": "img/nati.jpg",
+    },
     {
         "description": "Konzert im Parlament",
         "text": "Am 29.11.2020 findet im Parlament in Bern ein Trompetenkonzert statt. In der gleichen Zeit verzeichnet die Schweiz etwa 5000 an Covid-19 verstorbene Menschen.",
@@ -162,13 +185,73 @@ const EVENTS = [
         "image": "img/ballons.jpg",
 		"link": "https://www.nzz.ch/schweiz/staenderrat-gesang-und-musik-trotz-corona-ld.1589836?reduced=true"
     },     
-
+    {
+        "date": "05.12.2020",
+        "description": "Andrea Gm&#252;r, CVP",
+        "text": "Wir haben mehr Corona-Tote, weil wir mehr testen",
+        "link": "https://www.srf.ch/news/schweiz/cvp-und-das-virus-andrea-gmuer-muessen-lernen-mit-corona-umzugehen",
+        "image": "img/nati.jpg",
+    },
     {
         "description": "Alles f&auml;hrt Ski &ndash; ohne Abstand",
         "text": "Anfang Dezember berichtet srf.ch &uuml;ber die Er&ouml;ffnung der Ski- Saison in der Schweiz. &bdquo;Ein Bild zeigt Wintersportler Schulter an Schulter beim Anstehen vor der Gondelbahn.&ldquo; Vergleichbare Szenen gab es bereits bei der Er&ouml;ffnung der Fussballstadien im Oktober. Erneut geben sich die Verantwortlichen &uuml;berrascht.",
         "date": "07.12.2020",
         "image": "img/snow.jpg",
 		"link": "https://www.srf.ch/news/schweiz/alles-faehrt-ski-ohne-abstand-wintersport-in-verbier-dieses-bild-empoert-die-schweiz"
-    },   
+    },  
 
+    {
+        "date": "11.12.2020",
+        "description": "Andrea Caroni, FDP",
+        "text": "Bei allem Respekt vor jedem Todesfall: Ich wäre froh, ich würde das durchschnittliche Alter der Corona-Toten erreichen",
+        "link": "https://www.blick.ch/politik/irritierende-aussage-von-ausserrhoder-staenderat-fdp-caroni-vergleicht-anstieg-der-corona-toten-mit-hitparade-id16240111.html",
+        "image": "img/nati.jpg",
+    },     
+    {
+        "date": "12.12.2020",
+        "description": "Erich Hess, SVP",
+        "text": "Gr&#252;ndet religi&#246;se Gemeinschaften um die Corona-Einschr&#228;nkungen zu umgehen",
+        "link": "https://www.derbund.ch/svp-nationalrat-empfiehlt-gruendung-einer-religioesen-gemeinschaft-983720977674",
+        "image": "img/nati.jpg",
+    },   
+    {
+        "description": "Situation in den Schweizer Spit&#228;lern",
+        "text": "Die Zahl der Neuansteckungen mit dem Virus steigt weiter an. &#196;rzte wenden sind in Ihrer Verzweiflung an die &#214;ffentlichkeit. Die Spit&#228;ler sind &#252;berlastet, Mitarbeiter am physischen und psychischen Limit angelangt. Krebspatienten werden nach Hause gesendet – ihr Tumor muss warten.",
+        "date": "14.12.2020",
+        "image": "img/sick.jpg",
+		"link": "https://www.watson.ch/schweiz/coronavirus/453085151-10-zahlen-und-fakten-zur-aktuellen-situation-in-den-schweizer-spitaelern"
+    },
+
+    {
+        "description": "T&#246;dliche Blockade",
+        "text": "T&#246;dliche Blockade titelt am 19.12.2020 republik.ch. Der Bundesrat hat neue Corona-Massnahmen verk&#252;ndet, zu wenig und zu sp&#228;t nach allem was uns &#196;rzte und Virologen sagen. Der Bundesrat hat die Ambition aufgegeben uns zu sch&#252;tzen, leben zu retten. Wir wissen was der Januar uns bringen wird, mehr „&#220;berraschung“, leid und Tot, ein wirtschaftlicher Niedergang.",
+        "date": "19.12.2020",
+        "image": "img/stop.jpg",
+		"link": "https://www.republik.ch/2020/12/19/toedliche-ideologie"
+    },   
 ]
+
+
+for(var i = 0; i < EVENTS.length; i++) {
+    var event = EVENTS[i];
+    date = EVENTS[i].date.split(".");
+    var date = new Date(date[2] + "-" + date[1] + "-" + date[0]);
+    EVENTS[i].date = date
+}
+EVENTS.sort(function(a,b){
+return new Date(b.date) - new Date(a.date);
+});  
+
+function formatDate(date) {
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [day, month, year].join('.');
+}
